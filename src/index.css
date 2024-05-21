@@ -2,27 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 body {
-  background-color: antiquewhite;
+  background-color: #f0f0f0;
 }
 .container {
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 150px;
+  margin-right: 150px;
   .header_section {
     margin-top: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img {
-      width: 52px;
-      height: 52px;
-    }
     .header_nav {
+      align-items: center;
+      img {
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+      }
       display: flex;
       gap: 35px;
       li {
         list-style: none;
+        font-size: 18px;
+        font-weight: 300;
+        cursor: pointer;
       }
     }
     .header_btn {
@@ -30,26 +36,79 @@ body {
       gap: 10px;
       button:first-child {
         background-color: #ffffff;
+        transition: 0.3s;
+        &:hover {
+          background-color: #f5f5f5;
+        }
       }
       button:nth-child(2) {
         background-color: #151515;
         color: #fff;
+        transition: 0.3s;
+        &:hover {
+          background-color: #2e2e2a;
+        }
       }
       button {
         padding: 14px 20px;
         border: none;
+        font-size: 18px;
+        font-weight: 300;
+        cursor: pointer;
       }
     }
   }
   .main_sec {
-    padding-top: 60px;
+    padding-top: 100px;
+
+    display: flex;
     .main_head {
-      width: 720px;
       .main_title {
+        width: 700px;
         h1 {
           font-size: 70px;
           font-weight: 300;
         }
+        p {
+          font-size: 18px;
+          line-height: 26px;
+          font-weight: 400;
+          padding-top: 30px;
+        }
+        .main_input {
+          padding-top: 30px;
+          padding-bottom: 100px;
+          input {
+            width: 300px;
+            padding: 15px 19px 12px 16px;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            &::placeholder {
+              font-size: 18px;
+            }
+          }
+          button {
+            padding: 13px 20px;
+            background-color: #151515;
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            &:hover {
+              background-color: #2f2f2f;
+            }
+          }
+        }
+        .main_sponsor {
+          display: flex;
+          gap: 25px;
+        }
+      }
+    }
+    .main_img {
+      img {
+        width: 430px;
       }
     }
   }

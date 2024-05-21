@@ -4,8 +4,8 @@ const Header = () => {
   return (
     <header>
       <div className="header_section">
-        <img src={logoSvg} alt="logoImg" />
         <ul className="header_nav">
+          <img src={logoSvg} alt="logoImg" />
           <li>About us</li>
           <li>How it work</li>
           <li>Pricing</li>
